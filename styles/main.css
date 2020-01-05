@@ -198,8 +198,8 @@ acronym {
     opacity: 0; } }
 
 .section {
-  padding: 150px calc(50% - 470px);
   position: relative;
+  padding: 150px calc(50% - 470px);
   background: #eee; }
   .section:nth-child(even) {
     background-color: #fff; }
