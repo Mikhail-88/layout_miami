@@ -555,14 +555,14 @@ acronym {
     color: #000;
     font-weight: bold;
     border: 2px solid #0075ff; }
-  .input_textarea {
+  .input__textarea {
     height: 144px;
     padding-top: 17px;
     padding-left: 17px; }
 
 .testimonials {
   display: grid;
-  grid-gap: 150px;
+  grid-gap: 100px;
   grid-template-columns: repeat(3, 240px);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
