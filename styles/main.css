@@ -550,7 +550,8 @@ acronym {
   border-radius: 8px;
   padding-left: 17px;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
+          box-sizing: border-box;
+  outline: none; }
   .input:focus {
     color: #000;
     font-weight: bold;
@@ -652,9 +653,9 @@ acronym {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
   .inform {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
