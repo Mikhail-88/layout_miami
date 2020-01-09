@@ -97,8 +97,7 @@ acronym {
         -ms-flex-pack: center;
             justify-content: center;
     text-transform: uppercase;
-    width: 89px;
-    height: 32px; }
+    padding: 8px 24px; }
     .nav__item--active {
       cursor: pointer;
       background: rgba(255, 255, 255, 0.1);
@@ -129,7 +128,6 @@ acronym {
               animation: appear 0.5s linear; }
     .nav__item {
       padding: 15px 20px;
-      width: 100%;
       height: 22px;
       -webkit-box-pack: start;
           -ms-flex-pack: start;
@@ -137,16 +135,16 @@ acronym {
 
 @-webkit-keyframes appear {
   from {
-    -webkit-transform: translateY(500px);
-            transform: translateY(500px); }
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px); }
   to {
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
 
 @keyframes appear {
   from {
-    -webkit-transform: translateY(500px);
-            transform: translateY(500px); }
+    -webkit-transform: translateX(500px);
+            transform: translateX(500px); }
   to {
     -webkit-transform: translateY(0);
             transform: translateY(0); } }
@@ -248,7 +246,7 @@ acronym {
       line-height: 40px;
       letter-spacing: -1px;
       top: 0;
-      left: 20px;
+      margin-left: 20px;
       margin-bottom: 32px; }
     .header__logo {
       width: 73px;
@@ -265,8 +263,8 @@ acronym {
       width: 20px;
       -o-object-fit: contain;
          object-fit: contain;
-      top: 32px;
-      left: 23px;
+      margin-top: 15px;
+      margin-left: 23px;
       cursor: pointer; }
     .header__nav-toggler-label {
       display: inline-block;
@@ -282,7 +280,8 @@ acronym {
 .section {
   position: relative;
   padding: 150px calc(50% - 470px);
-  background: #eee; }
+  background: #eee;
+  scroll-behavior: smooth; }
   .section:nth-child(even) {
     background-color: #fff; }
   .section__heading {
@@ -444,7 +443,7 @@ acronym {
   display: none;
   position: fixed;
   bottom: 50px;
-  right: 50px;
+  right: 20px;
   z-index: 3;
   font-size: 18px;
   outline: none;
@@ -474,7 +473,9 @@ acronym {
   #button__top {
     position: -webkit-sticky;
     position: sticky;
-    margin-left: 80%; } }
+    font-size: 12px;
+    padding: 11px;
+    margin-left: 90%; } }
 
 .consultation {
   display: -webkit-box;
@@ -496,7 +497,8 @@ acronym {
     color: #0075ff;
     margin-bottom: 16px; }
   .consultation__form {
-    width: 412px; }
+    -ms-flex-preferred-size: 40%;
+        flex-basis: 40%; }
 
 @media screen and (max-width: 899px) {
   .consultation {
@@ -684,6 +686,9 @@ acronym {
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain; }
+
+html {
+  scroll-behavior: smooth; }
 
 body {
   font-family: Roboto, sans-serif;
