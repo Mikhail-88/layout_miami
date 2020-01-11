@@ -118,7 +118,10 @@ acronym {
     font-weight: bold;
     font-size: 22px;
     line-height: 22px;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    opacity: 0;
+    -webkit-transition: all 0.9s ease;
+    transition: all 0.9s ease; }
     .nav__list {
       height: 100%;
       width: 100%;
@@ -126,31 +129,13 @@ acronym {
       position: absolute;
       top: 0;
       padding-top: 120px;
-      background-color: #0075ff;
-      -webkit-animation: appear 0.5s linear;
-              animation: appear 0.5s linear; }
+      background-color: #0075ff; }
     .nav__item {
       padding: 15px 20px;
       height: 22px;
       -webkit-box-pack: start;
           -ms-flex-pack: start;
               justify-content: flex-start; } }
-
-@-webkit-keyframes appear {
-  from {
-    -webkit-transform: translateX(500px);
-            transform: translateX(500px); }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); } }
-
-@keyframes appear {
-  from {
-    -webkit-transform: translateX(500px);
-            transform: translateX(500px); }
-  to {
-    -webkit-transform: translateX(0);
-            transform: translateX(0); } }
 
 .header {
   height: 700px;
@@ -248,7 +233,7 @@ acronym {
       font-size: 46px;
       line-height: 40px;
       letter-spacing: -1px;
-      top: 0;
+      top: 200px;
       margin-left: 20px;
       margin-bottom: 32px; }
     .header__logo {
@@ -277,8 +262,8 @@ acronym {
       padding: 0;
       z-index: 1;
       cursor: pointer; }
-    .header__nav-toggler:not(:checked) ~ .nav {
-      display: none; } }
+    .header__nav-toggler:checked ~ .nav {
+      opacity: 1; } }
 
 .section {
   position: relative;
@@ -333,9 +318,9 @@ acronym {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
     .info__heading {
       max-width: 80%;
       margin-bottom: 48px; }
@@ -509,14 +494,12 @@ acronym {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
     .consultation__text {
       padding-bottom: 30px;
-      width: 80%; }
-    .consultation__heading {
-      text-align: center; } }
+      width: 80%; } }
 
 .form {
   display: -webkit-box;
