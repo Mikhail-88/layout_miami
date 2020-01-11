@@ -441,8 +441,8 @@ acronym {
     color: #eee;
     background: #0075ff; }
   .button:active {
-    -webkit-box-shadow: 6px 6px 20px rgba(42, 2, 80, 0.7);
-            box-shadow: 6px 6px 20px rgba(42, 2, 80, 0.7); }
+    -webkit-box-shadow: 0 6px 20px rgba(42, 2, 80, 0.7);
+            box-shadow: 0 6px 20px rgba(42, 2, 80, 0.7); }
 
 #button__top {
   display: none;
