@@ -604,7 +604,8 @@ acronym {
             align-items: center; }
     .consultation__text {
       padding-bottom: 30px;
-      width: 80%; } }
+      width: 80%;
+      margin-right: 0; } }
 
 .form {
   display: -webkit-box;
